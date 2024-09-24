@@ -1,0 +1,3 @@
+[submodule "collections/ansible_collections"]
+	path = collections/ansible_collections
+	url = git@github.com:sfenzke/ansible_collections.git
