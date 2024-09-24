@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+    - name: "Test"
+      sfenzke.pihole_api.customdns:
+        url: 'http://example.org'
+        api_key: '<< YOUR API_KEY HERE >>'
+        domain: 'test.example.org'
+        ip: '192.168.7.11'
+        state: present 
+      register: test
+
+    - debug:
+        var: test
